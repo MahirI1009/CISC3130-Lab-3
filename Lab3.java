@@ -5,25 +5,25 @@ public class Lab3 {
 
 public static void main(String[] args) throws Exception {
 		
-		String csv = "regional-us-weekly-latest-2.csv";
-		//String to hold file name
-		Scanner sc = new Scanner(new File(csv));
-		//Scanner object to read the csv file
-		PrintWriter outputFile = new PrintWriter("Artists-WeekOf10012020.txt");
-		//printwriter object to print the report to an output file
+	String csv = "regional-us-weekly-latest-2.csv";
+	//String to hold file name
+	Scanner sc = new Scanner(new File(csv));
+	//Scanner object to read the csv file
+	PrintWriter outputFile = new PrintWriter("Artists-WeekOf10012020.txt");
+	//printwriter object to print the report to an output file
 		
-		String header = sc.nextLine(); 
-		//gets header
-		String artistName = ""; 
-		//string for holding artist name
-		ArrayList<String> top200 = new ArrayList<>(); 
-		//arraylist for all the top 200 names, in the order they're in from the csv file
+	String header = sc.nextLine(); 
+	//gets header
+	String artistName = ""; 
+	//string for holding artist name
+	ArrayList<String> top200 = new ArrayList<>(); 
+	//arraylist for all the top 200 names, in the order they're in from the csv file
 		
-		String line = sc.nextLine(); 
-		//gets the first line after header before the while loop starts since it is irrelevant data
+	String line = sc.nextLine(); 
+	//gets the first line after header before the while loop starts since it is irrelevant data
 		
-		/*this while loop gets all the names from the csv file and ignores the rest of the data as it is unneeded for the report
-		 *it adds all the names to the top200 arraylist in the order that they were in in the csv file (including duplicates)*/
+	/*this while loop gets all the names from the csv file and ignores the rest of the data as it is unneeded for the report
+	 *it adds all the names to the top200 arraylist in the order that they were in in the csv file (including duplicates)*/
         while(sc.hasNext()) { //loop continues to the end of the file
         	line = sc.nextLine(); //reads in an entire line
             String [] name = line.split(","); //splits lines by commas as the data values are separated by commas
