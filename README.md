@@ -9,3 +9,4 @@ Finally, my Lab3.java class is what contains the main method, it reads in the da
 Then I sort the ArrayList in descending alphabetical order and then remove the duplicates. I sorted it in descending order because I plan to add it to my custom LinkedList using the insertFirst method, since it adds each name to the beginning, by the time all the names are added, the order will be reversed and thus my LinkedList will contain all the names in ascending alphabetical order. 
 After I filled up my LinkedList, I use my custom method to print all the artist names (in ascending alphabetical order) to an output file, the one that is titled "Artists-WeekOf10012020.txt".
 
+If you want to run the code, keep all of the files in one package, including the input file, or in an online IDE, upload all the files to the online IDE (including the input file) and run it.
